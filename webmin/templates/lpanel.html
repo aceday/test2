@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link ref="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    
+</body>
+</html>
+<img  src="{% static 'img/animeLogo.png'%}" class="logoAnime">
+<h3 class="aniLDash" >Anime Dashboard</h3>
+<form action="uploadDB"></form>
+<input type="file" class="uploadInDB">
+<input type="submit" class="uploadBtnInDB"><br><br>
+        <a class="dbstat">Anime Name: Unknown</a></a><br>
+        <a class="dbstat">Table: Unknown</a><br>
+        <a class="dbstat">Previous Added: Unknown</a><br>
+        <a class="dbstat">Date Created: Unknown</a>

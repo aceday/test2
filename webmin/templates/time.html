@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Real-time Clock</title>
+	<script>
+		function updateTime() {
+			var now = new Date();
+			var hours = now.getHours();
+			var minutes = now.getMinutes();
+			var seconds = now.getSeconds();
+			var timeString = hours + ':' + minutes + ':' + seconds;
+			document.getElementById('clock').innerHTML = timeString;
+		}
+
+		setInterval(updateTime, 1000);
+	</script>
+</head>
+<body>
+	<h1>Real-time Clock</h1>
+	<p>The current time is: <span id="clock"></span></p>
+</body>
+</html>
